@@ -1,7 +1,5 @@
 # Ecommerce-store-xc
 
-# READ ME GENERATOR
-
 ## Description
 This project provides data for an ecommerce store. A database was created for the store using backend technology like express.js and sequilize to interact with mySQL.
 
