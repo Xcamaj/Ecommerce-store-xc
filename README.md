@@ -30,6 +30,8 @@ Seed the file by running npm run seed. Run "node server" in the command line.
 https://opensource.org/licenses/MIT
 
 ## Demo
+https://drive.google.com/file/d/1K3G6-GAHgxGCq9yVScMx3Se0qjJNMBKH/view
+https://drive.google.com/file/d/1qZWa9qZgNYGhiN6L_ycqUMZUAyQ1AMKd/view
 
 ## Contributors
 Made By Xhemajl Camaj
