@@ -33,23 +33,24 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    include: {
-      model: Product,
-      attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
-    }
+    include: [
+      {
+        model: Product,
+        attributes: ['id', 'product_name', 'stock', 'category_id']
+      }
+    ]
   })
-    .then(dbCatData => {
-      if (!dbCatData) {
-        res.status(404).json({ message: 'No categories found' });
+    .then(dbCategoryData => {
+      if (!dbCategoryData) {
+        res.status(404).json({ message: 'No category found with this id' });
         return;
       }
-      res.json(dbCatData);
+      res.json(dbCategoryData);
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err)
+      res.status(500).json(err);
     });
-
 });
 
 router.post('/', (req, res) => {
